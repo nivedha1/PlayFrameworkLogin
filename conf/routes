@@ -1,0 +1,13 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Default path will just redirect to the computer list
+GET     /                           controllers.LoginController.index(request: Request)
+
+# Computers list (look at the default values for pagination parameters)
+POST     /register                  controllers.LoginController.registerUser(request: Request)
+
+# Add computer
+POST     /loginUser             controllers.LoginController.loginUser(request: Request)
+GET     /login             controllers.LoginController.login(request: Request)
